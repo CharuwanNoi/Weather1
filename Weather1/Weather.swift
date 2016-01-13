@@ -14,4 +14,6 @@ class Weather {
     var descriptionOfConditions = String()
     var temp = String()
     var forecasts = [AnyObject]()
+    
+    var woeid = String()
 }

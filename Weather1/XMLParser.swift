@@ -18,6 +18,7 @@ class XMLParser: NSObject, NSXMLParserDelegate {
         super.init()
         
         let urlToSend: NSURL = NSURL(string: url)!
+        
         parser = NSXMLParser(contentsOfURL: urlToSend)!
         parser.delegate = self
         
@@ -31,6 +32,8 @@ class XMLParser: NSObject, NSXMLParserDelegate {
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         
         element = elementName
+        
+//        print("asd------")
         
         if elementName == "item" {
             weather = Weather()
@@ -51,6 +54,7 @@ class XMLParser: NSObject, NSXMLParserDelegate {
             
             weather.forecasts.append(forecast)
         }
+        
     }
     
     func parser(parser: NSXMLParser, foundCharacters string: String) {

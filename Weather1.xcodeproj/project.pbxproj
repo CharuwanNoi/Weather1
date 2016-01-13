@@ -14,6 +14,8 @@
 		2CBC4A951C3A234F009AC0EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBC4A931C3A234F009AC0EE /* LaunchScreen.storyboard */; };
 		2CBC4AA11C3A4E48009AC0EE /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC4AA01C3A4E48009AC0EE /* Weather.swift */; };
 		2CBC4AA31C3A5109009AC0EE /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC4AA21C3A5109009AC0EE /* XMLParser.swift */; };
+		E7B893F01C44EAEE0009F31D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B893EF1C44EAEE0009F31D /* Location.swift */; settings = {ASSET_TAGS = (); }; };
+		E7B893F21C44F0420009F31D /* XMLParserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B893F11C44F0420009F31D /* XMLParserLocation.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		2CBC4A961C3A234F009AC0EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBC4AA01C3A4E48009AC0EE /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		2CBC4AA21C3A5109009AC0EE /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		E7B893EF1C44EAEE0009F31D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E7B893F11C44F0420009F31D /* XMLParserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				2CBC4A8A1C3A234F009AC0EE /* AppDelegate.swift */,
+				E7B893EF1C44EAEE0009F31D /* Location.swift */,
 				2CBC4A8C1C3A234F009AC0EE /* ViewController.swift */,
 				2CBC4AA21C3A5109009AC0EE /* XMLParser.swift */,
+				E7B893F11C44F0420009F31D /* XMLParserLocation.swift */,
 				2CBC4AA01C3A4E48009AC0EE /* Weather.swift */,
 				2CBC4A8E1C3A234F009AC0EE /* Main.storyboard */,
 				2CBC4A911C3A234F009AC0EE /* Assets.xcassets */,
@@ -142,7 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CBC4AA31C3A5109009AC0EE /* XMLParser.swift in Sources */,
+				E7B893F21C44F0420009F31D /* XMLParserLocation.swift in Sources */,
 				2CBC4A8D1C3A234F009AC0EE /* ViewController.swift in Sources */,
+				E7B893F01C44EAEE0009F31D /* Location.swift in Sources */,
 				2CBC4AA11C3A4E48009AC0EE /* Weather.swift in Sources */,
 				2CBC4A8B1C3A234F009AC0EE /* AppDelegate.swift in Sources */,
 			);
@@ -258,6 +266,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Weather1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananacoding.Weather1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -269,6 +278,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Weather1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananacoding.Weather1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +304,7 @@
 				2CBC4A9B1C3A234F009AC0EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

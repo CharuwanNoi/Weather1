@@ -11,11 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextView!
+    var id = String()
+  
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let parser = XMLParser(url: "https://weather.yahooapis.com/forecastrss?w=12756339&u=c")
+        print("ID : -------> \(id)")
+        let parser = XMLParser(url: "https://weather.yahooapis.com/forecastrss?w=\(id)&u=c")
+        
         let weather: Weather = parser.weather
         var string = String()
         
@@ -32,6 +37,7 @@ class ViewController: UIViewController {
         }
         
         textField.text = string
+
     }
 
     override func didReceiveMemoryWarning() {
